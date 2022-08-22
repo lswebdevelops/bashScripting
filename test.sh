@@ -1,5 +1,6 @@
 #!/bin/bash
 clear
+ls -lart
 until [ "$menuChoise" = 3 ]
 do
     echo "Menu"
@@ -30,7 +31,7 @@ then
     then
         echo "$filename is writable"
     else
-        echo "$filename does NOT writable"
+        echo "$filename is NOT writable"
     fi
     read junk
 fi
